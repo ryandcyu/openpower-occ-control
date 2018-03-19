@@ -15,6 +15,7 @@ bool Status::occActive(bool value)
         if (value)
         {
             // Bind the device
+	    sleep(10);
             device.bind();
 
             // Start watching for errors
